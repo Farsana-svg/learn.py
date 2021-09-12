@@ -1,0 +1,103 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled4.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyO9wXyvwQWX/Y7V6udgwvuP",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Farsana-svg/learn.py/blob/main/Calculator%20using%20python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-MQ-ROSFsY6c",
+        "outputId": "19933894-1107-4103-e291-53b45abb8641"
+      },
+      "source": [
+        " \n",
+        "#Function to add two numbers\n",
+        "def add(x,y):\n",
+        "    a = x+y\n",
+        "    return a\n",
+        " \n",
+        "#Function to subtract two numbers\n",
+        "def subtract (x,y):\n",
+        "    b = x-y\n",
+        "    return b\n",
+        " \n",
+        "#Function to multiply two numbers\n",
+        "def multiply (x,y):\n",
+        "    c = x*y\n",
+        "    return c\n",
+        " \n",
+        "#Function to divide two numbers\n",
+        "def divide(x,y):\n",
+        "    d = x/y\n",
+        "    return d\n",
+        " \n",
+        "print(\"Please select Operator\")\n",
+        "print(\"1.Add\")\n",
+        "print(\"2.Subtract\")\n",
+        "print(\"Multiply\")\n",
+        "print(\"Divide\")\n",
+        " \n",
+        "#Take input from the user\n",
+        "choice = int(input(\"select operation from1,2,3,4:\"))\n",
+        "x = int(input(\"Enter first number:\"))\n",
+        "y = int(input(\"Enter second number:\"))\n",
+        " \n",
+        "if choice ==1:\n",
+        "    print(x,\"+\",y,\"=\",add(x,y))\n",
+        "elif choice ==2:\n",
+        "    print(x,\"-\",y,\"=\", subtract (x,y))\n",
+        "elif choice ==3:\n",
+        "    print(x,\"*\",y,\"=\", multiply (x,y))\n",
+        "elif choice ==4:\n",
+        "    print (x,\"/\",y,\"=\",divide(x,y))\n",
+        "else:\n",
+        "    print(\"ERROR\")"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Please select Operator\n",
+            "1.Add\n",
+            "2.Subtract\n",
+            "Multiply\n",
+            "Divide\n",
+            "select operation from1,2,3,4:1\n",
+            "Enter first number:23\n",
+            "Enter second number:35\n",
+            "23 + 35 = 58\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
